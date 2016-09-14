@@ -1,0 +1,16 @@
+package com.myapp.repository;
+
+import org.springframework.stereotype.Repository;
+
+import com.myapp.model.DO.NameDO;
+
+@Repository("nameRepository")
+public class NameRepositoryImpl implements NameRepository{
+	
+	
+
+	public NameDO find(String lastName) {
+		return null;
+	}
+
+}

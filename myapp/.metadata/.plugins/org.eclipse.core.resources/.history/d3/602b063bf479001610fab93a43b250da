@@ -1,0 +1,12 @@
+package com.myapp.repository;
+
+import com.myapp.model.Name;
+import com.myapp.model.DO.NameDO;
+
+public class NameRepositoryImpl implements NameRepository{
+
+	public NameDO find(Name name) {
+		return null;
+	}
+
+}

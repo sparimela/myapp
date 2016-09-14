@@ -1,0 +1,19 @@
+package com.myapp.service.impl;
+
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
+
+import com.google.gson.Gson;
+import com.myapp.model.CreateAccount;
+import com.myapp.service.interfaces.NameDetailsService;
+
+public class NameDetailsServiceImpl implements NameDetailsService{
+
+	@Override
+	public Response updateName(String inputString) {
+		Gson gson = new Gson();
+		CreateAccount accOject = gson.fromJson(inputString, CreateAccount.class);
+		return Response.status(Status.OK).entity(accOject).build();
+	}
+
+}

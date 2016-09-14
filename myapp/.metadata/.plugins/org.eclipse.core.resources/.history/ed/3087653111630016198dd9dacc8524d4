@@ -1,0 +1,72 @@
+package com.myapp.model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class CreateAccount implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String emailId;
+	private String phoneNumber;
+	private String phoneOS;
+	private String activationType;
+	private String memberType;
+	private String activated;
+	private Date activatedDate;
+	private Date registrationDate;
+	
+	
+	public String getEmailId() {
+		return emailId;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	public String getPhoneOS() {
+		return phoneOS;
+	}
+	public void setPhoneOS(String phoneOS) {
+		this.phoneOS = phoneOS;
+	}
+	public String getActivationType() {
+		return activationType;
+	}
+	public void setActivationType(String activationType) {
+		this.activationType = activationType;
+	}
+	public String getMemberType() {
+		return memberType;
+	}
+	public void setMemberType(String memberType) {
+		this.memberType = memberType;
+	}
+	public String getActivated() {
+		return activated;
+	}
+	public void setActivated(String activated) {
+		this.activated = activated;
+	}
+	public Date getActivatedDate() {
+		return activatedDate;
+	}
+	public void setActivatedDate(Date activatedDate) {
+		this.activatedDate = activatedDate;
+	}
+	public Date getRegistrationDate() {
+		return registrationDate;
+	}
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+	
+	
+}

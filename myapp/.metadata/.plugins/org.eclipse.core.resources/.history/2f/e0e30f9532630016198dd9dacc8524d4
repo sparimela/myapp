@@ -1,0 +1,54 @@
+package com.myapp.service.impl;
+
+import java.util.Date;
+
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
+
+import org.codehaus.jackson.map.util.JSONPObject;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
+import com.google.gson.Gson;
+import com.myapp.model.CreateAccount;
+import com.myapp.service.interfaces.CreateAccountService;
+
+@Component("createAccountService")
+@Repository
+public class CreateAccountServiceImpl implements CreateAccountService{
+
+
+	@Override
+	public Response createAccount(JSONPObject inputJson) {
+		
+		Gson gson = new Gson();
+		String input = inputJson.toString();
+
+		CreateAccount accOject = gson.fromJson(input, CreateAccount.class);
+		
+		return Response.status(Status.OK).entity(accOject).build();
+	}
+
+	@Override
+	public Response getAccount(String phoneNumber) {
+		
+		Date date = new Date();
+
+		CreateAccount createAccount = new CreateAccount();
+		
+		createAccount.setPhoneNumber("9729005816");
+		createAccount.setEmailId("s@gmail.com");
+		createAccount.setPhoneOS("Apple");
+		createAccount.setActivated("N");
+		createAccount.setActivationType("Phone");
+		createAccount.setMemberType("Bussiness");
+		createAccount.setActivated("N");
+		createAccount.setActivatedDate(date);
+		createAccount.setRegistrationDate(date);
+		
+		
+		
+		return null;
+	}
+
+}

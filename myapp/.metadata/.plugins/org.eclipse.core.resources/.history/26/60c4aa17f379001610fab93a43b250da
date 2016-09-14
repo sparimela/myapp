@@ -1,0 +1,9 @@
+package com.myapp.service.interfaces;
+
+import com.myapp.model.DO.NameDO;
+
+public interface NameDetailsService {
+	
+	void findUser(NameDO name);
+
+}

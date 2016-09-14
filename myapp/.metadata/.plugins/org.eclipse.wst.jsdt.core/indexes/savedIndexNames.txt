@@ -1,0 +1,5 @@
+INDEX VERSION 1.3+/Users/srparim/workspace/newmyapp/myapp/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+119408308.index
+4109545004.index
+131112111.index
+1763719973.index

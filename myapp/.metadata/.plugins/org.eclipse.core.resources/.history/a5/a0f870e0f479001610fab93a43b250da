@@ -1,0 +1,18 @@
+package com.myapp.repository;
+
+import org.springframework.stereotype.Repository;
+
+import com.myapp.cassandra.CqlDAO;
+import com.myapp.model.DO.NameDO;
+
+@Repository("nameRepository")
+public class NameRepositoryImpl implements NameRepository{
+	
+	@Resource(name = "nameNoSqlDOCqlDAO")
+	private CqlDAO<Object, NameDO> nameNoSqlDOCqlDAO;
+
+	public NameDO find(String lastName) {
+		return null;
+	}
+
+}

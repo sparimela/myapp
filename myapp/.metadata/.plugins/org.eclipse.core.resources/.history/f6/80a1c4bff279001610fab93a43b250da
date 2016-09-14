@@ -1,0 +1,6 @@
+package com.myapp.service.impl;
+
+@Repository("nameRepository")
+public class NameDetailsServiceImpl {
+
+}

@@ -1,0 +1,9 @@
+package com.myapp.repository;
+
+import com.myapp.model.DO.NameDO;
+
+public interface NameRepository {
+	
+	NameDO find (Name name);
+
+}

@@ -1,0 +1,15 @@
+package com.myapp.cassandra;
+
+import info.archinnov.achilles.persistence.PersistenceManager;
+
+public class CqlDriverConfig {
+	
+	private PersistenceManager persistenceManager;
+	private ClusterBuilder clusterBuilder;
+	
+	
+	public CqlDriverConfig(){
+		
+	}
+
+}

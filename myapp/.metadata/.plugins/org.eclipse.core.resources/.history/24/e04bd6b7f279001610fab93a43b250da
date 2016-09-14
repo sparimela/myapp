@@ -1,0 +1,5 @@
+package com.myapp.service.impl;
+
+public class NameDetailsServiceImpl {
+
+}

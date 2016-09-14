@@ -1,0 +1,30 @@
+package com.myapp.service.impl;
+
+import javax.annotation.Resource;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
+
+import org.codehaus.jackson.map.util.JSONPObject;
+import org.springframework.stereotype.Component;
+
+import com.google.gson.Gson;
+import com.myapp.model.CreateAccount;
+import com.myapp.service.interfaces.CreateAccountService;
+
+@Component
+@Resource
+public class CreateAccountServiceImpl implements CreateAccountService{
+
+
+	@Override
+	public Response createAccount(JSONPObject inputJson) {
+		
+		Gson gson = new Gson();
+		String input = inputJson.toString();
+
+		CreateAccount accOject = gson.fromJson(input, CreateAccount.class);
+		
+		return Response.status(Status.OK).entity(accOject).build();
+	}
+
+}

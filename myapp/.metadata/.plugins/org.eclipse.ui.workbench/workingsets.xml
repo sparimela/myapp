@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1471282704819_1" label="myapp-parent" name="myapp-parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.myapp.service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/myapp-model" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/myapp-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/myapp-impl" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1470346476071_0" label="Window Working Set" name="Aggregate for window 1470346476071"/>
+</workingSetManager>

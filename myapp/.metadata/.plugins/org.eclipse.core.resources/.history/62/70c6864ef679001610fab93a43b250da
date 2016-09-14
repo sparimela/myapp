@@ -1,0 +1,6 @@
+package com.myapp.service.interfaces;
+
+@Path("/name")
+public interface NameDetailsService {
+
+}

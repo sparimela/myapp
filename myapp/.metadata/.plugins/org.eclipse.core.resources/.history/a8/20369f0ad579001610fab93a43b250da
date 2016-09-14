@@ -1,0 +1,9 @@
+package com.myapp.cassandra;
+
+import info.archinnov.*
+
+public class CqlDriverConfig {
+	
+	private PersistenceManager persistencyManger;
+
+}

@@ -1,0 +1,15 @@
+package com.myapp.service.impl;
+
+import com.myapp.model.CreateAccount;
+
+public class SampleJsonGenerator {
+	
+	public static void main(String[] args) throws Exception {
+		
+		CreateAccount accJson = new CreateAccount();
+		accJson.setPhoneNumber("972");
+		
+		
+	}
+
+}

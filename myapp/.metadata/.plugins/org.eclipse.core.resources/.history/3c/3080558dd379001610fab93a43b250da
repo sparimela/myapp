@@ -1,0 +1,21 @@
+package com.myapp.cassandra;
+
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class ClusterBuilder {
+	
+	private Cluster cluster;
+	private Session session;
+	
+	public ClusterBuilder(){
+		buildCluster();
+	}
+
+	private void buildCluster() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

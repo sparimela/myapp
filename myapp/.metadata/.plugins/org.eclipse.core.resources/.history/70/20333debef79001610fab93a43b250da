@@ -1,0 +1,5 @@
+package com.myapp.cassandra.nosqldoconfig;
+
+public class NameCassandraConfig {
+
+}

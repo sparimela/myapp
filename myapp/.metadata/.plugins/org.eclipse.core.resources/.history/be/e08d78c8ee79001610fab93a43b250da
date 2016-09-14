@@ -1,0 +1,5 @@
+package com.myapp.model.DO;
+
+public class NameNoSqlDo {
+
+}

@@ -1,0 +1,8 @@
+package com.myapp.service.impl;
+
+import org.springframework.stereotype.Repository;
+
+@Repository("nameRepository")
+public class NameDetailsServiceImpl {
+
+}

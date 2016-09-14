@@ -1,0 +1,30 @@
+package com.myapp.cassandra;
+
+import info.archinnov.achilles.persistence.PersistenceManager;
+import info.archinnov.achilles.persistence.PersistenceManagerFactory;
+
+public class CqlDriverConfig {
+	
+	private PersistenceManager persistenceManager;
+	private ClusterBuilder clusterBuilder;
+	
+	
+	public CqlDriverConfig(){
+		init(clusterBuilder);
+		
+	}
+
+
+	private void init(ClusterBuilder clusterBuilder) {
+		try{
+			final PersistenceManagerFactory persistenceManagerFactory = 
+					PersistenceManagerFactory.PersistencyMangerFactoryBuilder.builder().build();
+					
+			
+		} catch (Exception exception){
+			exception.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.myapp.cassandra.nosqldoconfig;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.myapp.cassandra.ClusterBuilder;
+
+@Configuration
+public class NameCassandraConfig {
+	
+	@Bean
+	public ClusterBuilder clusterBuilder(){
+		ClusterBuilder clusterBuilder = new ClusterBuilder();
+		return clusterBuilder;
+		
+	}
+	
+
+}

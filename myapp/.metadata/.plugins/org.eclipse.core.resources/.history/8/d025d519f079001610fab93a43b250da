@@ -1,0 +1,17 @@
+package com.myapp.model.DO;
+
+import info.archinnov.achilles.annotations.Column;
+import info.archinnov.achilles.annotations.Entity;
+import info.archinnov.achilles.annotations.Id;
+
+@Entity(table = "name")
+public class NameNoSqlDo {
+	
+	@Id(name = "last")
+	private String last;
+
+	@Column(name = "first")
+	private String first;
+	
+
+}

@@ -1,0 +1,43 @@
+package com.myapp.cassandra;
+
+import info.archinnov.achilles.persistence.PersistenceManager;
+import info.archinnov.achilles.persistence.PersistenceManagerFactory;
+
+public class CqlDriverConfig {
+	
+	private PersistenceManager persistenceManager;
+	private ClusterBuilder clusterBuilder;
+	
+	
+	public CqlDriverConfig(){
+		init(clusterBuilder);
+		
+	}
+
+
+	private void init(ClusterBuilder clusterBuilder) {
+		try{
+			final PersistenceManagerFactory persistenceManagerFactory =
+
+                    PersistenceManagerFactory.PersistenceManagerFactoryBuilder.builder(clusterBuilder.getCluster()). //possible Null pointer
+
+                            withNativeSession(clusterBuilder.getSession()).
+
+                    withEntityPackages(cqlConfig.getEntityPackages()).
+
+                    withKeyspaceName(cqlConfig.getKeySpace()).
+
+                    //withDefaultReadConsistency(ConsistencyLevel.valueOf(cqlConfig.getReadConsistency())).
+
+                    //withDefaultWriteConsistency(ConsistencyLevel.valueOf(cqlConfig.getWriteConsistency())).
+
+                    build();
+					
+			
+		} catch (Exception exception){
+			exception.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.myapp.service.impl;
+
+import java.util.Date;
+
+import com.myapp.model.CreateAccount;
+
+public class SampleJsonGenerator {
+	
+	public static void main(String[] args) throws Exception {
+		
+		CreateAccount accJson = new CreateAccount();
+		accJson.setPhoneNumber("972");
+		
+		 accJson.setEmailId("s@gmail.com");
+		 accJson.getPhoneOS("Apple");
+		 accJson.getActivated("N");
+		 
+		private String phoneNumber;
+		private String phoneOS;
+		private String activationType;
+		private String memberType;
+		private String activated;
+		private Date activatedDate;
+		private Date registrationDate;
+		
+		
+	}
+
+}
